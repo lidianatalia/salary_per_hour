@@ -17,7 +17,7 @@ db = <DATABASE NAME>
 
 ## Run Pipeline Script
 1. Open terminal and open folder `dag`
-2. Run `python pipeline.py --csvfile <FILENAME> --datefilter <DATEFILTER>
+2. Run `python pipeline.py --csvfile <FILENAME> --datefilter <DATEFILTER>`
 2. List of Arguments
 
 
@@ -45,7 +45,7 @@ There are two sql files that will be daily running:
 2. Duplicate data in `employees` checked by `employee_id`
 
 ### Impropriate Checkin and Checkout
-I found that there are condition where checkin time greater thatn checkout time.
+I found that there are condition where checkin time greater than checkout time.
 After doing a simple research, I conclude that there are two conditions:
 - users that have a mid night shift (these case occurs routinely)
 - random users checkout the day after checkin. 
